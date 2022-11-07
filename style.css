@@ -9,6 +9,10 @@
     --card-color-primary: #F7DD43;
     --card-bg-color: #1d1c19;
     --bg: url(./assets/bg-yellow.svg);
+    --h2-span-color: #E1E1E6;
+    --card-ul-li-strong: #E1E1E6;
+    --card-background-color: #1D1C19;
+    --h2-date-color: #F7DD43;
 
 }
 
@@ -17,6 +21,11 @@ body.blue {
     --card-color-primary: #338AF3;
     --card-bg-color: #202024;
     --bg: url(./assets/bg-blue.svg);
+    --h2-span-color: #E1E1E6;
+    --card-ul-li-strong: #E1E1E6;
+    --card-background-color: #1D1C19;
+    --h2-date-color: #F7DD43;
+
 }
 
 body.green {
@@ -24,6 +33,32 @@ body.green {
     --card-color-primary: #047C3F;
     --card-bg-color: #1A1F1B;
     --bg: url(./assets/bg-green.svg);
+    --h2-span-color: #E1E1E6;
+    --card-ul-li-strong: #E1E1E6;
+    --card-background-color: #1D1C19;
+    --h2-date-color: #F7DD43;
+}
+
+body.purple {
+    --card-title-border-color:#cc99ff;
+    --card-color-primary: #cc99ff;
+    --card-bg-color: #330066;
+    --bg: url(./assets/bg-purple.svg);
+    --h2-span-color: #400080;
+    --card-ul-li-strong: #400080;
+    --card-background-color: #E1E1E6;
+    --h2-date-color: #cc99ff;
+}
+
+body.black{
+    --card-title-border-color:#000000;
+    --card-color-primary: #000000;
+    --card-bg-color: #000000;
+    --bg: url(./assets/bg-black.svg);
+    --h2-span-color: #000000;
+    --card-ul-li-strong: #000000;
+    --card-background-color: #ffffcc;
+    --h2-date-color: #000000;
 }
 
 ul {
@@ -58,7 +93,7 @@ header {
 .card {
     padding: 32px 23px;
     text-align: center;
-    background: #1D1C19;
+    background: var(--card-background-color);
     border-bottom: 2px solid var(--card-color-primary);
     border-radius: 6px;
 }
@@ -75,11 +110,11 @@ header {
     width: fit-content;
     margin-inline: auto;
     margin-bottom: 53px;
-    color: #F7DD43;
+    color: var(--h2-date-color);
 }
 
 .card h2 span {
-    color: #E1E1E6;
+    color: var(--h2-span-color);
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -107,7 +142,7 @@ header {
     font-weight: 900;
     font-size: 36px;
     line-height: 125%;
-    color: #E1E1E6;
+    color: var(--card-ul-li-strong);
 }
 
 .card h2:hover,

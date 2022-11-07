@@ -33,4 +33,22 @@ document.querySelector('#cards').innerHTML =
     ) +
     createCard("02/12", "sexta",
     createGame("brazil", "16:00", "cameroon")
+    ) +
+    createCard("26/11", "sábado",
+    createGame("argentina", "16:00", "mexico")
     )
+
+    function changeColor(color) {
+        var body = document.getElementById("colorChange");
+  
+        var bodyClasses = body.classList
+        
+
+        if(bodyClasses.value === '') {
+            bodyClasses.add(color);
+        } else {
+            body.className = '';
+            bodyClasses.add(color);
+        }
+
+    }
